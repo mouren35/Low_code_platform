@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid #f00; */
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(199, 199, 199, 1);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* 测试 */
+#appbar,#main_body {
+    /* height: 100px; */
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+
+.container {
+    width: 100%;
+    /* border: 1px solid #f00; */
+    margin: 0px auto;
+}
+
+/* appbar样式 */
+#appbar {
+    width: 100%;
+    height: 58px;
+    /* overflow: hidden; */
+}
+
+#appbar .container {
+    height: 58px;
+    background-color: #204F66;
+}
+
+#appbar li {
+    float: left;
+    line-height: 58px;
+}
+
+#appbar ul {
+    width: 820px;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.header_right {
+    position: relative;
+    line-height: 58px;
+}
+
+.header_right i {
+    position: absolute;
+    top: 17px;
+    right: 90px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgba(89.25, 89.25, 89.25, 1);
+}
+
+input {
+    background: rgba(234.6, 234.6, 234.6, 1);
+    border: 2.66px solid rgba(255, 255, 255, 1);
+    border-radius: 10.64px;
+    outline: none;
+    width: 200px;
+    height: 37px;
+    margin-right: 80px;
+    overflow: visible;
+}
+
+.logo_img img {
+    margin-top: 10px;
+    width: 153px;
+    height: 42px;
+}
+
+#appbar li a {
+    font-size: 15px;
+}
+
+#appbar li a:focus {
+    color: rgba(255, 255, 255, 1);
+    font-size: 21px;
+}
+
+/* 主体部分 */
+#main_body {
+    height: 1000px;
+}
+
+.user_info {
+    margin-top: 24px;
+}
+
+#main_body .container {
+    width: 1160px;
+}
+
+.various_modules div img {
+    width: 855px;
+    height: 133px;
+}
+
+/* 左侧用户样式 */
+/* .drawing_board {
+    width: 275px;
+    height: 367px;
+} */
+
+.drawing_board img{
+    width: 275px;
+    height: 397px;
+}
+
+.user_img img{
+    width: 164px;
+    height: 164px;
+}
+
+.user {
+    position: relative;
+    width: 275px;
+    height: 368px;
+}
+
+.user_img {
+    position: absolute;
+    top: 54px;
+    left: 10px;
+}
+
+.user_name {
+    text-align: center;
+    margin: 20px auto 27px;
+    background: rgba(242.352, 249.2523, 252.45, 1);
+    border: 2.82px solid rgba(116, 172, 207, 1);
+    border-radius: 5.64px;
+    width: 77px;
+    font-size: 16px;
+    padding: 2px;
+}
+
+.user_border1 {
+    border: 20px solid #F7F7F7;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px #EDEDED;
+}
+
+.user_border2 {
+    border: 20px solid #F7F7F7;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 2px #EDEDED;
+}
+
+.operation li {
+    text-align: center;
+    font-size: 16px;
+    margin: 26px auto;
+}
+
+/* 右侧操作样式 */
+.various_modules {
+    margin-top: 98px;
+}
+
+.various_modules li {
+    position: relative;
+}
+
+.various_modules div:nth-child(1) {
+    position: absolute;
+    top: 15px;
+    left: 21px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 21px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: black;
+    padding: 1px 12px;
+}
+
+.various_modules div:nth-child(2) {
+    /* border: 3px solid rgba(100, 119, 135, 1); */
+    margin-top: 13px;
+}

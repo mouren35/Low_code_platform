@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/HomePage.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="./js/HomePage.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div id="appbar">
+        <div class="container">
+            <ul class="left">
+                <li><img src="./picture/logo.png" alt=""></li>
+                <li><a id="defaultOpen" class="alink" onclick="appbar_click(event)" href="#">首页</a></li>
+                <li><a class="alink" onclick="appbar_click(event)" href="#">页面编辑</a></li>
+                <li><a class="alink" onclick="appbar_click(event)" href="#">库表管理</a></li>
+                <li><a class="alink" onclick="appbar_click(event)" href="#">数据源定义</a></li>
+                <li><a class="alink" onclick="appbar_click(event)" href="#">系统</a></li>
+                <li><a class="alink" onclick="appbar_click(event)" href="#">创作平台</a></li>
+            </ul>
+            <div class="header_right right">
+                <div class="language">
+                    <select name="" id="">
+                        <option value="">简体中文</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text">
+                </div>
+                <div class="user">
+                    <a href="#"><img src="./picture/人员.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 登录部分 -->
+    <div id="login_img">
+        <div class="container">
+            <!-- <div class="chuang_yi">
+                <img src="./picture/羚禾云窗定制创意.png" alt="">
+            </div> -->
+            <button class="login_button">登录</button>
+            <button class="try_button">立即试用</button>
+        </div>
+    </div>
+
+    <!-- 右侧客服小图标 -->
+    <div id="ke_fu" class="right">
+        <div class="container">
+            <div class="outline_box">
+                <a href="#">
+                    <img src="./picture/6咨询.png" alt="">
+                </a>
+            </div>
+            <div class="outline_box">
+                <a href="#">
+                    <img src="./picture/留言.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 优点卡片 -->
+    <div id="advantage">
+        <div class="container">
+            <div class="card">
+                <div class="camera">
+                    <img src="./picture/摄像头.png" alt="">
+                </div>
+                <hr class="line">
+                <div class="faster">更快</div>
+                <div class="introduce">
+                    <span>开发周期短，插件化开发模式，
+                        配置式开发,难度低，无须精通开发语
+                        言，复用性好
+                    </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="lamp">
+                    <img src="./picture/台灯.png" alt="">
+                </div>
+                <hr class="line">
+                <div class="cheaper">更省</div>
+                <div class="introduce">
+                    <span>
+                        开发成本低，人工成本低，维护成本低，配置修改,无需改代码，技术人员依赖度低
+                    </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="web_camera">
+                    <img src="./picture/网络摄像头.png" alt="">
+                </div>
+                <hr class="line">
+                <div class="better">更优</div>
+                <div class="introduce">
+                    <span>
+                        质量有保障，出错率低，模块调用中间件，安全性高，运行快
+                    </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="uav">
+                    <img src="./picture/无人机.png" alt="">
+                </div>
+                <hr class="line">
+                <div class="flexible">更活</div>
+                <div class="introduce">
+                    <span>
+                        可扩展性好,支持多类数据库,无须针对数据库单独配置，支持扩展开发，复用性好
+                    </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="colour_atla">
+                    <img src="./picture/色卡.png" alt="">
+                </div>
+                <hr class="line">
+                <div class="easer">更易</div>
+                <div class="introduce">
+                    <span>
+                        低代码/零代码灵活定制
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 个性化自定义系统部分 -->
+    <div id="individuation">
+        <div class="container">
+            <div class="dot_matrix">
+                <div class="spot"></div>
+                <div class="spot"></div>
+                <div class="spot"></div>
+            </div>
+            <div class="dot_matrix">
+                <div class="spot"></div>
+                <div class="spot"></div>
+                <div class="spot"></div>
+            </div>
+            <hr>
+            <div class="indiv_word">
+                羚禾个性化自定义系统
+            </div>
+            <div class="indiv_engli">
+                LINGHE PERSONALIZED CUSTOM SYSTEM
+            </div>
+            <div class="portability">
+                便捷、轻量
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 高质研发 -->
+    <div id="quality">
+        <div class="container">
+            <div class="left_img">
+                <img class="top_left" src="./picture/左上角灯泡.png" alt="">
+                <img class="right_left_1" src="./picture/右上角第一个.png" alt="">
+                <img class="right_left_2" src="./picture/右上角第二个.png" alt="">
+                <img class="rightmost" src="./picture/最右边图片.png" alt="">
+                <img class="bottom_right" src="./picture/右下角图片.png" alt="">
+                <img class="bottom_left" src="./picture/左下角图片.png" alt="">
+                <img class="centermost" src="./picture/最中间图片.png" alt="">
+            </div>
+            <div class="height_quality">
+                <div class="gao_zhi_yan_fa">高质研发 真诚服务</div>
+                <div class="gao_zhi_engli">
+                    <span>
+                        High-quality r & D sincere service
+                    </span>
+                </div>
+                <ul>
+                    <li>人人都是开发者</li>
+                    <li>秉持可持续发展理念</li>
+                    <li>致力于低代码技术的研发，为客户个性化定制企业系统</li>
+                </ul>
+                <button class="watch_all">
+                    <span>查看全部</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 客户市场 -->
+    <div id="customer_market">
+        <div class="container">
+            <div class="ke_hu_shi_chang">
+                <div class="jian_li_qiao_liang">建立客户与市场的最佳桥梁</div>
+                <div class="jian_li_qiao_liang_engli">
+                    <span>
+                        Build the best bridge between customers and market
+                    </span>
+                </div>
+                <ul>
+                    <li>旨在通过公司科学、专业、真诚的</li>
+                    <li>服务来建立客户与市场的最佳桥梁，使客户对本服务心满意足</li>
+                    <li>拖拽有着“描述性语言"的组件便可轻松搭建一个业务应用系统</li>
+                    <li>实现普通人能简易地打开自己的代码世界</li>
+                </ul>
+                <button class="watch_all_2">
+                    <span>查看全部</span>
+                </button>
+            </div>
+            <div class="computer_img">
+                <img class="bubble" src="./picture/两个蓝色圆形.png" alt="">
+                <img class="message" src="./picture/消息图片.png" alt="">
+                <img class="blank_screen_computer" src="./picture/黑屏电脑.png" alt="">
+                <img class="foundation" src="./picture/电脑底座.png" alt="">
+                <img class="switch" src="./picture/电脑开关.png" alt="">
+                <img class="dashed_line" src="./picture/开关_飞机_虚线.png" alt="">
+                <img class="screen" src="./picture/电脑屏幕图片.png" alt="">
+                <img class="plane" src="./picture/03_01_纸飞机.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 数字化 -->
+    <div id="digital">
+        <div class="container">
+            <div>
+                <img src="./picture/电脑代码.png" alt="">
+            </div>
+            <div class="shu_zi_hua">
+                <div class="qi_ye_shu_zi_hua">企业数字化程度</div>
+                <div class="qi_ye_shu_zi_hua_engli">
+                    <span class="degree">
+                        Degree of enterprise digitization
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        我们打造了 “个性化、定制化” 的低代码平台，为每个
+                    </li>
+                    <li>
+                        中小型企业量身打造适合自身的管理系统，让每名管理
+                    </li>
+                    <li>
+                        者都能享受到简单的管理模式，助力数字化与企业管理
+                    </li>
+                    <li>
+                        化相结合，推动中小型企业高效率高质量发展。
+                    </li>
+                </ul>
+                <button class="watch_all_3">
+                    <span>查看全部</span>
+
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 底部信息 -->
+    <div id="bottom">
+        <div class="container">
+            <div class="relevant_information">
+                <div class="lin_he_img">
+                    <img src="./picture/羚禾云窗图标.png" alt="">
+                </div>
+                <div class="jian_jie">
+                    本团队将以 “高质研发、真诚服务” 为精神，始终秉持可持续发展理念，响应国家政府号召，致力于低代码技术的研发，为客户个性化定制企业系统。
+                </div>
+                <div class="icon">
+                    <img class="dou_yin" src="./picture/抖音.png" alt="">
+                    <img class="qq" src="./picture/qq.png" alt="">
+                    <img class="wechat" src="./picture/微信.png" alt="">
+                    <img class="wei_bo" src="./picture/微博.png" alt="">
+                </div>
+            </div>
+            <div class="detail right">
+                <ul>
+                    <li>了解我们</li>
+                    <li><a href="#">行业案例</a> </li>
+                    <li><a href="#">产品定价</a></li>
+                    <li><a href="#">团队协作</a></li>
+                    <li><a href="#">定价实施</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                </ul>
+                <ul>
+                    <li>竞争优势</li>
+                    <li>功能广</li>
+                    <li>极简易</li>
+                    <li>品牌战略</li>
+                    <li>优化管理结构</li>
+                    <li>强化品牌战略</li>
+                </ul>
+                <ul>
+                    <li>产品功能</li>
+                    <li>页面编辑</li>
+                    <li>库表管理</li>
+                    <li>数据源定义</li>
+                    <li>系统</li>
+                    <li>系统首页</li>
+                </ul>
+                <ul>
+                    <li>官方信息</li>
+                    <li><a href="#">服务条款</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">儿童隐私政策</a></li>
+                    <li><a href="#">版权投诉指引</a></li>
+                    <li><a href="#">意见反馈</a></li>
+                </ul>
+            </div>
+            <ul class="bei_an">
+                <li>
+                    XXXXXXXXXXXX化部备案管理系统网站 &nbsp;&nbsp; 羚禾公司版权所有©2000-2022
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
